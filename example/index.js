@@ -5,14 +5,52 @@
 var JSONTreeView = require('json-tree-view');
 
 var view = new JSONTreeView('example', {
-    hello : 'world',
-    doubleClick : 'me to edit',
-    a : null,
-    b : true,
-    c : false,
-    d : 1,
-    e : {nested : 'object'},
-    f : [1,2,3]
+  "compositeResponse": [
+    {
+      "body": [
+        {
+          "errorCode": "NOT_FOUND",
+          "message": "The requested resource does not exist"
+        }
+      ],
+      "httpHeaders": {},
+      "httpStatusCode": 404,
+      "referenceId": "Account0"
+    },
+    {
+      "body": [
+        {
+          "errorCode": "NOT_FOUND",
+          "message": "The requested resource does not exist"
+        }
+      ],
+      "httpHeaders": {},
+      "httpStatusCode": 404,
+      "referenceId": "Account1"
+    },
+    {
+      "body": [
+        {
+          "errorCode": "NOT_FOUND",
+          "message": "The requested resource does not exist"
+        }
+      ],
+      "httpHeaders": {},
+      "httpStatusCode": 404,
+      "referenceId": "Contact0"
+    },
+    {
+      "body": [
+        {
+          "errorCode": "NOT_FOUND",
+          "message": "The requested resource does not exist"
+        }
+      ],
+      "httpHeaders": {},
+      "httpStatusCode": 404,
+      "referenceId": "Contact1"
+    }
+  ]
 }, null);
 
 
